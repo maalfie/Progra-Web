@@ -2,7 +2,7 @@
 let ciudad = "Buenos Aires";
 let pais = "Argentina";
 let diaNacimiento = "18/04/06"
-
+//cambio
 console.log(ciudad,pais,diaNacimiento);
 
 //EJERCICIO 2
