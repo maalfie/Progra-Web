@@ -2,9 +2,9 @@
 let ciudad = "Buenos Aires";
 let pais = "Argentina";
 let diaNacimiento = "18/04/06"
-//cambio
+//cambio 2 
 console.log(ciudad,pais,diaNacimiento);
-
+console.log("Hola, mi nombre es Martin y soy de " + ciudad + ", " + pais + ". Nací el " + diaNacimiento + ".");
 //EJERCICIO 2
 let num1 = 34;
 let num2 = 39;
