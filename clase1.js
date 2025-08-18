@@ -5,7 +5,7 @@ let ciudad = "Buenos Aires";
 let pais = "Argentina";
 let diaNacimiento = "18/04/06"
 //cambio 2 
-console.log(ciudad,pais,diaNacimiento);
+console.log(ciudad, pais, diaNacimiento);
 console.log("Hola, mi nombre es Martina y soy de " + ciudad + ", " + pais + ". Nací el " + diaNacimiento + ".");
 
 //EJERCICIO 2
@@ -15,10 +15,10 @@ let num2 = 39;
 let num3 = 58;
 
 let suma = (num1 + num2 + num3)
-let prom = (suma/3)
-let div = suma%2
+let prom = (suma / 3)
+let div = suma % 2
 
-console.log(prom,div)
+console.log(prom, div)
 
 //EJERCICIO 3
 //Almacenar un objeto coche con propiedades (marca, modelo y año). Imprime el tipo de cada propiedad con typeof.
@@ -28,9 +28,9 @@ let AUTO = {
     año: 2023,
 };
 
-console.log(typeof(AUTO.marca))
-console.log(typeof(AUTO.modelo))
-console.log(typeof(AUTO.año))
+console.log(typeof (AUTO.marca))
+console.log(typeof (AUTO.modelo))
+console.log(typeof (AUTO.año))
 
 //EJERCICIO 4
 //Crea un array con 5 ciudades. Reemplaza el tercer elemento por otra ciudad y luego imprime el array actualizado.
@@ -73,7 +73,7 @@ let var1 = false;
 let var2 = false;
 let var3 = true;
 
-let resultado = (var1&&var2)||(var1&&var3)||(var2&&var3);
+let resultado = (var1 && var2) || (var1 && var3) || (var2 && var3);
 console.log("Al menos 2 son verdaderas: " + resultado);
 
 //EJERCICIO 7
@@ -100,18 +100,18 @@ let nombre_apellido = console.log((nomb + " " + apellido));
 //Declara una variable numérica y utiliza los operadores (++) y (--) para modificar su valor. Imprimir rdos.
 let var_num = 75;
 
-var_num ++;
+var_num++;
 console.log(var_num);
 
-var_num --;
+var_num--;
 console.log(var_num);
 
 //EJERCICIO 10
 //Crea un objeto que represente un estudiante con propiedades. Imprimir cada propiedad.
 let estudiante = {
-nombre: "Martina Alfie",
-edad: 19,
-carrera: "Gestion de negocios y tecnologia"
+    nombre: "Martina Alfie",
+    edad: 19,
+    carrera: "Gestion de negocios y tecnologia"
 };
 console.log("Nombre: " + estudiante.nombre + "." + " Edad: " + estudiante.edad + "." + " Carrera: " + estudiante.carrera + ".")
 
@@ -147,10 +147,10 @@ console.log(typeof var_null);
 //Variable que almacene un número como string. Convierte este string a un número.
 let var_string = "123";
 var_string = Number(var_string);
- 
-let operacion1 = var_string/123;
-let operacion2 = var_string +++
 
-console.log(typeof var_string);
+let operacion1 = var_string / 123;
+let operacion2 = var_string++ +
+
+    console.log(typeof var_string);
 console.log(operacion1);
 console.log(operacion2);
