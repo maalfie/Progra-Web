@@ -7,8 +7,9 @@ function numeros(num1, num2, num3) {
     else if (num2 > num1 && num2 > num3) {
         mayor = num2
     }
-    else
+    else{
         mayor = num3
+    }
 
     return ("El mayor de los 3 numeros es el " + mayor)
 }
@@ -17,7 +18,22 @@ console.log(numeros(3, 9, 19))
 
 //EJERCICIO 2
 //Función expresada recibe un array de strings y retorne string que concatena todos los elementos del array
+const ARRAY1 = ["str1", "str2", "str3"];
+const concatenar = function(array) {
+    let string = ""
+    for (let i = 0; i < array.length; i++) {
+        string += array[i] + " "; 
+    }
+    return string; 
+};
 
+console.log(concatenar(ARRAY1));
+
+//Con metodo de array: JOIN
+const concatenar = function(array) {
+    return array.join(""); // une sin espacios
+};
+console.log(concatenar(ARRAY1));
 
 //EJERCICIO 3
 //Convierte la función del ejercicio anterior a una función de flecha. 
@@ -33,8 +49,9 @@ function temperatura(celsius) {
     else if (celsius < 25) {
         clima = "esta templado"
     }
-    else
+    else{
         clima = "hace calor"
+    }
     return ("Segun la temperatura proporcionada, " + clima)
 }
 console.log(temperatura(33))
