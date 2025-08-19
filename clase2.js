@@ -79,3 +79,102 @@ console.log(booleanos((1 > 0), (1 == 2), (3 == 7), (4 > 8)))
 
 //EJERCICIO 7
 //Función que tome un número como argumento y retorne su factorial. Utilizar estructura if para manejar el caso base
+let resultado = 1
+function factorial(numero) {
+    if (numero == 1 || numero == 0) {
+        resultado = 1
+    }
+
+    for (let i = 1; i <= numero; i++) {
+        resultado *= i
+    }
+    return (resultado)
+}
+console.log(factorial(3))
+
+//EJERCICIO 8
+//Función que salude a una persona. Si no se proporciona el nombre, debe saludar con "Hola, invitado".
+function saludo(nombre) {
+    if (nombre === undefined) {
+        return ("Hola, invitado")
+    }
+    else {
+        return ("Hola " + nombre)
+    }
+}
+console.log(saludo("Martina"))
+
+//EJERCICIO 9
+//Función que tome un número y retorne true si es par o false si es impar. 
+//Utiliza el operador módulo (%) y un operador ternario.
+function par(numero) {
+    let resto = numero % 2
+    return (resto == 0 ? true : false)
+}
+console.log(par(2))
+
+//EJERCICIO 10
+//Función que reciba un día de la semana (en número) y retorne el nombre del día. Usa una estructura switch.
+function semana(numero) {
+    switch (numero) {
+        case 0:
+            return ("Hoy es domingo")
+            break;
+        case 1:
+            return ("Hoy es Lunes")
+            break;
+        case 2:
+            return ("Hoy es martes")
+            break;
+        case 3:
+            return ("Hoy es miercoles")
+            break;
+        case 4:
+            return ("Hoy es jueves")
+            break;
+        case 5:
+            return ("Hoy es viernes")
+            break;
+        case 6:
+            return ("Hoy es sabado")
+            break;
+    }
+}
+
+console.log(semana(5))
+
+//EJERCICIO 11.1
+//Crea una función que calcule la suma de los números de 1 hasta n.
+function sum_1_hasta_n(n) {
+    let resultado = 0
+    for (let i = 0; i <= n; i++) {
+        resultado += i
+    }
+    return (resultado)
+}
+console.log(sum_1_hasta_n(3))
+
+//EJERCICIO 11.2
+//Crea una función RECURSIVA que calcule la suma de los números de 1 hasta n.
+function sum(n) {
+  if (n == 0) {        
+    return 0;
+  } else {              
+    return n + sum(n - 1);
+  }
+}
+
+console.log(sum(3)); 
+
+//EJERCICIO 12
+//Función que verifique si una contraseña cumple con ciertos criterios: 
+//al menos 8 caracteres, contiene un número y una letra mayúscula. 
+function contra_segura(contraseña){
+    if(contraseña.length >= 8 && /[0-9]/.test(contraseña) && /[A-Z]/.test(contraseña)){
+        return("Tu contraseña es segura")
+    }
+    else{
+        return("Tu contraseña no es segura")
+    }
+}
+console.log(contra_segura("Hola12Como56Estas"))
